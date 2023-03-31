@@ -1,4 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .navBarPers {
     background-color: #7b6aa0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.bold {
+    color: #282062;
+}
+
+.title{    
+  text-align: center;
+}
+
+.title-text{    
+  text-align: center;
+  color: #7b6aa0;
+  font-size:1.2em;
+}
+
+.wf-400 {
+	font-weight: 400;
+}
+
+.wf-600 {
+	font-weight: 600;
+}
+
+.wf-600i {
+	font-weight: 600;
+	font-style: italic;
+}
+
+.wf-900 {
+	font-weight: 900;
+}
+
+.wf-900i {
+	font-weight: 900;
+	font-style: italic;
 }

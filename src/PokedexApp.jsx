@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PokemonCard } from "./components";
 import { getPokemons } from "./store";
-import { NavBar } from "./UI";
+import { AppTheme } from "./theme";
+import { NavBar, Search } from "./UI";
 
 
 export const PokedexApp = () => {
@@ -15,15 +16,16 @@ export const PokedexApp = () => {
     }, []);
 
     return (
-        <>
-            <NavBar />    
-            <ul>
-              {
+        <AppTheme>
+            <NavBar />   
+            <Search />
+            <div className="row rows-cols-1 row-cols-md-3 g-3">
+            {
                 pokemons.map( ({ name, url }) => (
                     <PokemonCard key={ name } name = { name } url={ url } />
                 ))
-              }
-            </ul>
+            }
+            </div>
 
             <button
                 style={{ display: previous ? '' : 'none' }}
@@ -39,6 +41,6 @@ export const PokedexApp = () => {
             >
             Next
             </button>
-        </>
+        </AppTheme>
     )
 }

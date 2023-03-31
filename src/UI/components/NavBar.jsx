@@ -1,11 +1,14 @@
-
+import logo from '../../assets/pokedex/icon.png'
 
 export const NavBar = () => {
     return (
-        <nav className="navbar navbar-dark mb-4 px-4 navBarPers">
+        <nav className="navbar navbar-dark mb-4 px-4 navBarPers" >
 
             <span className="navbar-brand">
-                Pokédex
+                <img
+                    width="40" height="40"
+                    src={logo} 
+                />
             </span>
             
         </nav>
