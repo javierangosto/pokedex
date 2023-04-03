@@ -1,1 +1,1 @@
-export * from './getPokemonById';
+export * from './getInfoPokemon';

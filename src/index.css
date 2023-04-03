@@ -42,3 +42,244 @@ body {
 	font-weight: 900;
 	font-style: italic;
 }
+
+.order-card {
+  color: #fff;
+}
+
+.bg-c-green {
+  background: linear-gradient(95deg,#59e0c5,#2ed8b6);
+}
+
+.bg-c-normal {
+  background-color: #d5d5c5; /* Pastel gray */
+  color: #454545; /* Tonalidad más oscura */
+}
+
+.bg-c-fire {
+  background-color: #ffa977; /* Pastel orange */
+  color: #773300; /* Tonalidad más oscura */
+}
+
+.bg-c-water {
+  background-color: #80c0ff; /* Pastel blue */
+  color: #003366; /* Tonalidad más oscura */
+}
+
+.bg-c-grass {
+  background-color: #9dd77c; /* Pastel green */
+  color: #214d21; /* Tonalidad más oscura */
+}
+
+.bg-c-electric {
+  background-color: #ffe96b; /* Pastel yellow */
+  color: #7f6000; /* Tonalidad más oscura */
+}
+
+.bg-c-ice {
+  background-color: #a3faff; /* Pastel light blue */
+  color: #003d3d; /* Tonalidad más oscura */
+}
+
+.bg-c-fighting {
+  background-color: #c96e5a; /* Pastel red */
+  color: #330000; /* Tonalidad más oscura */
+}
+
+.bg-c-poison {
+  background-color: #c87dd1; /* Pastel purple */
+  color: #330033; /* Tonalidad más oscura */
+}
+
+.bg-c-ground {
+  background-color: #ebd69d; /* Pastel tan */
+  color: #4d3b00; /* Tonalidad más oscura */
+}
+
+.bg-c-flying {
+  background-color: #b0b0ff; /* Pastel lavender */
+  color: #0c0c33; /* Tonalidad más oscura */
+}
+
+.bg-c-psychic {
+  background-color: #ff8f8f; /* Pastel pink */
+  color: #660000; /* Tonalidad más oscura */
+}
+
+.bg-c-bug {
+  background-color: #c6d16e; /* Pastel olive green */
+  color: #2f2f00; /* Tonalidad más oscura */
+}
+
+.bg-c-rock {
+  background-color: #cfb28e; /* Pastel beige */
+  color: #663d00; /* Tonalidad más oscura */
+}
+
+.bg-c-ghost {
+  background-color: #9f6e9f; /* Pastel dark purple */
+  color: #330033; /* Tonalidad más oscura */
+}
+
+.bg-c-dragon {
+  background-color: #a27dff; /* Pastel dark blue */
+  color: #1a0066; /* Tonalidad más oscura */
+}
+
+.bg-c-dark {
+  background-color: #8a6955; /* Pastel dark gray */
+  color: #000000; /* Tonalidad más oscura */
+}
+
+.bg-c-steel {
+  background-color: #c6c6d7; /* Pastel light gray */
+  color: #1a1a1a; /* Tonalidad más oscura */
+}
+
+.bg-c-fairy {
+  background-color: #ffb4e6; /* Pastel pink */
+  color: #660042; /* Tonalidad más oscura */
+}
+
+.bg-c-unknown {
+  background-color: #6d6d6d; /* Pastel dark gray */
+  color: #ffffff; /* Tonalidad más clara */
+}
+ 
+.bg-c-shadow {
+  background-color: #595959; /* Pastel dark gray */
+  color: #ffffff; /* Tonalidad más clara */
+}
+
+.bg-type-normal {
+  background-color: #95afc0; 
+}
+
+.bg-type-fire {
+  background-color: #f55656; 
+}
+
+.bg-type-water {
+  background-color: #0190FF; 
+}
+
+.bg-type-grass {
+  background-color: #00b894; 
+}
+
+.bg-type-electric {
+  background-color: #EFB549; 
+}
+
+.bg-type-ice {
+  background-color: #74b9ff; 
+}
+
+.bg-type-fighting {
+  background-color: #904636; 
+}
+
+.bg-type-poison {
+  background-color: #6c5ce7; 
+}
+
+.bg-type-ground { 
+  background-color: #bca466; 
+}
+
+.bg-type-flying {
+  background-color: #66c7c7; 
+}
+
+.bg-type-psychic {
+  background-color: #a29bfe; 
+}
+
+.bg-type-bug {
+  background-color: #80b31d; 
+}
+
+.bg-type-rock {
+  background-color: #8d6b12; 
+}
+
+.bg-type-ghost {
+  background-color: #a55eea; 
+}
+
+.bg-type-dragon {
+  background-color: #ffeaa7; 
+}
+
+.bg-type-dark {
+  background-color: #121212;
+}
+
+.bg-type-steel {
+  background-color: #73737d;
+}
+
+.bg-type-fairy {
+  background-color: #FF0069; 
+}
+
+.bg-type-unknown {
+  background-color: #404040;
+}
+ 
+.bg-type-shadow {
+  background-color: #3c3c3c;
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+  border: none;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card .card-block {
+  padding: 25px;
+}
+
+.order-card i {
+  font-size: 26px;
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.pokemon-card {
+  width:40%;
+}
+
+.title-card{
+  text-align: center;
+}
+
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.types i {
+  margin-left: 5px;
+}

@@ -1,34 +1,44 @@
+import { useEffect, useState } from "react";
+import { getClassNameByType, getPokemonById, getTypeBackground } from "../../helpers/getInfoPokemon";
+import { Loading } from "../../UI";
 
-export const PokemonCard = ({ name = "", url = ""}) => {
+export const PokemonCard = ({ name, url }) => {
+    const [pokemonData, setPokemonData] = useState();
+
+    useEffect(() => {
+        const getData = async () => {
+
+          const data = await getPokemonById(url);
+          setPokemonData(data);
+        };
+
+        getData();
+      }, []);
 
     const id = url.substring(33, url.length).replaceAll('/', '');
+    const colorType = getClassNameByType(pokemonData?.types[0].type.name);
+
+    if ( !pokemonData || !name ) return <Loading key={ id } /> 
     
     return (
-        
-        <div className="col animate__animated animate__fadeIn">
-            <div className="card">
-                <div className="row no-gutters">
-                    <div className="col-4">
-                        <img src={ `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${ id }.png` } className="card-img" alt = { name } />
-                    </div>
-
-                    <div className="col-8">
-                        <div className="card-body">
-                            <h5 className="card-title">{ name }</h5>
-                            <p className="card-text">{ name }</p>
-
-                            <p className="card-text">
-                                <small className="text-muted"></small>
+            
+            <div className="col-md-4 col-xl-3">
+                <div className={`card ${ colorType } order-card`}>
+                    <div className="card-block">
+                        <h4 className="m-b-0 title-card ">
+                            <b>{ name.charAt(0).toUpperCase() + name.slice(1) }</b>
+                        </h4>
+                        <div>
+                            <img src={ `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${ id }.png` } className="pokemon-card f-left" alt = { name } />
+                            <p className="f-right types">
+                                { pokemonData?.types.map(type => (
+                                    <i key={ id + type.type.name }><span  className={`card ${ getTypeBackground(type.type.name) }`}> { type.type.name }<br /></span></i>
+                                    )) 
+                                }
                             </p>
-
-                            {/*<Link to={`/hero/${ id }`}>
-                                Más...                            
-                            </Link>*/}
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
     )
 }
