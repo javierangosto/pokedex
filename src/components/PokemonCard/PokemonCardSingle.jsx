@@ -19,7 +19,6 @@ export const PokemonCardSingle = () => {
             
         <div 
             className="alert alert-danger animate__animated animate__fadeIn"
-            aria-label='divSearchError'
         >
             There is no pokemon with the name/id <b>{ query }</b>
         </div>

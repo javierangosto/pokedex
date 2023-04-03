@@ -1,4 +1,4 @@
-import logo from '../../assets/pokedex/icon.png'
+import logo from '/icon.png'
 
 export const NavBar = () => {
     return (
