@@ -16,16 +16,14 @@ export const PokemonMain = () => {
 
     return (
         <>
-            <div className="container col animate__animated animate__fadeIn">
+            <div className={`container col ${ isLoading ? '' : 'animate__animated animate__fadeIn' }`}>
                 <div className="row">
 
                     {
                         ( search )
                         ? <PokemonCardSingle key = { pokemonSearch.id } />
                         : <PokemonList key={ pokemons.name } pokemons = { pokemons }/>
-                    }
-
-                    
+                    }                    
 
                 </div>
             </div>  
