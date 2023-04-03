@@ -17,7 +17,7 @@ export const Search = () => {
       if (!query) {
         dispatch(getPokemons());
       }else{
-        dispatch(getPokemons( `https://pokeapi.co/api/v2/pokemon/${query.toLowerCase()}`, true ));
+        dispatch(getPokemons( `https://pokeapi.co/api/v2/pokemon/${query.toLowerCase()}`, true, query ));
       }
 
     }

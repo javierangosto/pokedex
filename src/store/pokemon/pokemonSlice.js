@@ -10,6 +10,7 @@ export const pokemonSlice = createSlice({
         pokemonSearch: [],
         isLoading: false,
         search: false,
+        query: '',
     },
     reducers: {
         startLoadingPokemons: ( state ) => {
@@ -23,6 +24,7 @@ export const pokemonSlice = createSlice({
             state.previous = action.payload.previous || '';
             state.pokemonSearch = action.payload.pokemonSearch || '';
             state.search = action.payload.search;
+            state.query = action.payload.query;
         },
     }
 });

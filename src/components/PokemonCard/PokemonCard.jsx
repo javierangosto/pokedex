@@ -4,6 +4,15 @@ import { Loading } from "../../UI";
 
 export const PokemonCard = ({ name, url }) => {
     const [pokemonData, setPokemonData] = useState();
+    const [bounceCard, setBounceCard] = useState(false);
+
+    const handleMouseOver = () => {
+        setBounceCard(true);
+    };
+  
+    const handleMouseOut = () => {
+        setBounceCard(false);
+    };
 
     useEffect(() => {
         const getData = async () => {
@@ -22,7 +31,11 @@ export const PokemonCard = ({ name, url }) => {
     
     return (
             
-            <div className="col-md-4 col-xl-3">
+            <div 
+                className={ `col-md-4 col-xl-3 ${ bounceCard ? "animate__animated animate__pulse" : "" }` }
+                onMouseOver={handleMouseOver}
+                onMouseOut ={handleMouseOut}
+            >
                 <div className={`card ${ colorType } order-card`}>
                     <div className="card-block">
                         <h4 className="m-b-0 title-card ">
