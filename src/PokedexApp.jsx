@@ -1,16 +1,24 @@
 import { AppTheme } from "./theme";
 import { NavBar, Search } from "./UI";
-import { PokemonMain } from "./components";
+import { PokemonMain, PokemonPage } from "./components";
+import { useParams } from "react-router-dom";
 
 
 export const PokedexApp = () => {
 
+    const { id } = useParams();  
+
+    console.log(id);
+
     return (
         <AppTheme>
             <NavBar />   
-            <Search />
-            
-             <PokemonMain />
+
+            {
+                (id)
+                ? <PokemonPage id={ id } />
+                : <> <Search />  <PokemonMain /></>
+            }
 
         </AppTheme>
     )

@@ -11,7 +11,7 @@ export const getPokemons = ( url = '/pokemon', search = false, query = '' ) => {
         await pokemonApi.get( url )
             .then ( (response) => {
                 data = response.data;
-                dispatch( setPokemons({ pokemons: data.results, pokemonSearch: data, current: url, next: data.next, previous: data.previous, search: search }) );
+                dispatch( setPokemons({ pokemons: search ? '' : data.results, pokemonSearch: search ? data : '', current: url, next: data.next, previous: data.previous, search: search }) );
             })
             .catch (( error ) => {
                 dispatch( setPokemons({ pokemons: '', pokemonSearch: '', current: '', next: '', previous: '', search: true, query: query }) );

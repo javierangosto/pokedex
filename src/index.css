@@ -2,6 +2,10 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navBarPers {
     background-color: #7b6aa0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -192,7 +196,7 @@ body {
 }
 
 .bg-type-psychic {
-  background-color: #a29bfe; 
+  background-color: #c2555c; 
 }
 
 .bg-type-bug {
@@ -208,7 +212,7 @@ body {
 }
 
 .bg-type-dragon {
-  background-color: #ffeaa7; 
+  background-color: #0b6dc3; 
 }
 
 .bg-type-dark {

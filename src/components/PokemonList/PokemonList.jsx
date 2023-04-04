@@ -8,7 +8,7 @@ export const PokemonList = ( { pokemons }) => {
         <>
         {
             pokemons.map( ({ name, url }) => (
-                <PokemonCard key={ name } name = { name } url={ url } />
+                    <PokemonCard key={ name } name = { name } url={ url } />
             ))
         }
 
