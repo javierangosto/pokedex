@@ -8,8 +8,6 @@ export const PokedexApp = () => {
 
     const { id } = useParams();  
 
-    console.log(id);
-
     return (
         <AppTheme>
             <NavBar />   
