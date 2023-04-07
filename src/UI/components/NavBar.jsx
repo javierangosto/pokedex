@@ -1,3 +1,4 @@
+import logo from '../../../public/icon.png'
 
 export const NavBar = () => {
     return (
@@ -6,7 +7,7 @@ export const NavBar = () => {
             <span className="navbar-brand">
                 <img
                     width="40" height="40"
-                    src="https://raw.githubusercontent.com/javierangosto/pokedex/main/docs/icon.png" 
+                    src={ logo }
                 />
             </span>
             

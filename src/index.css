@@ -56,102 +56,102 @@ a {
 }
 
 .bg-c-normal {
-  background-color: #d5d5c5; /* Pastel gray */
+  background-color: #d5d5c5 !important; /* Pastel gray */
   color: #454545; /* Tonalidad más oscura */
 }
 
 .bg-c-fire {
-  background-color: #ffa977; /* Pastel orange */
+  background-color: #ffa977 !important; /* Pastel orange */
   color: #773300; /* Tonalidad más oscura */
 }
 
 .bg-c-water {
-  background-color: #80c0ff; /* Pastel blue */
+  background-color: #80c0ff !important; /* Pastel blue */
   color: #003366; /* Tonalidad más oscura */
 }
 
 .bg-c-grass {
-  background-color: #9dd77c; /* Pastel green */
+  background-color: #9dd77c !important; /* Pastel green */
   color: #214d21; /* Tonalidad más oscura */
 }
 
 .bg-c-electric {
-  background-color: #ffe96b; /* Pastel yellow */
+  background-color: #ffe96b !important; /* Pastel yellow */
   color: #7f6000; /* Tonalidad más oscura */
 }
 
 .bg-c-ice {
-  background-color: #a3faff; /* Pastel light blue */
+  background-color: #a3faff !important; /* Pastel light blue */
   color: #003d3d; /* Tonalidad más oscura */
 }
 
 .bg-c-fighting {
-  background-color: #c96e5a; /* Pastel red */
+  background-color: #c96e5a !important; /* Pastel red */
   color: #330000; /* Tonalidad más oscura */
 }
 
 .bg-c-poison {
-  background-color: #c87dd1; /* Pastel purple */
+  background-color: #c87dd1 !important; /* Pastel purple */
   color: #330033; /* Tonalidad más oscura */
 }
 
 .bg-c-ground {
-  background-color: #ebd69d; /* Pastel tan */
+  background-color: #ebd69d !important; /* Pastel tan */
   color: #4d3b00; /* Tonalidad más oscura */
 }
 
 .bg-c-flying {
-  background-color: #b0b0ff; /* Pastel lavender */
+  background-color: #b0b0ff !important; /* Pastel lavender */
   color: #0c0c33; /* Tonalidad más oscura */
 }
 
 .bg-c-psychic {
-  background-color: #ff8f8f; /* Pastel pink */
+  background-color: #ff8f8f !important; /* Pastel pink */
   color: #660000; /* Tonalidad más oscura */
 }
 
 .bg-c-bug {
-  background-color: #c6d16e; /* Pastel olive green */
+  background-color: #c6d16e !important; /* Pastel olive green */
   color: #2f2f00; /* Tonalidad más oscura */
 }
 
 .bg-c-rock {
-  background-color: #cfb28e; /* Pastel beige */
+  background-color: #cfb28e !important; /* Pastel beige */
   color: #663d00; /* Tonalidad más oscura */
 }
 
 .bg-c-ghost {
-  background-color: #9f6e9f; /* Pastel dark purple */
+  background-color: #9f6e9f !important; /* Pastel dark purple */
   color: #330033; /* Tonalidad más oscura */
 }
 
 .bg-c-dragon {
-  background-color: #a27dff; /* Pastel dark blue */
+  background-color: #a27dff !important; /* Pastel dark blue */
   color: #1a0066; /* Tonalidad más oscura */
 }
 
 .bg-c-dark {
-  background-color: #8a6955; /* Pastel dark gray */
+  background-color: #8a6955 !important; /* Pastel dark gray */
   color: #000000; /* Tonalidad más oscura */
 }
 
 .bg-c-steel {
-  background-color: #c6c6d7; /* Pastel light gray */
+  background-color: #c6c6d7 !important; /* Pastel light gray */
   color: #1a1a1a; /* Tonalidad más oscura */
 }
 
 .bg-c-fairy {
-  background-color: #ffb4e6; /* Pastel pink */
+  background-color: #ffb4e6 !important; /* Pastel pink */
   color: #660042; /* Tonalidad más oscura */
 }
 
 .bg-c-unknown {
-  background-color: #6d6d6d; /* Pastel dark gray */
+  background-color: #6d6d6d !important; /* Pastel dark gray */
   color: #ffffff; /* Tonalidad más clara */
 }
  
 .bg-c-shadow {
-  background-color: #595959; /* Pastel dark gray */
+  background-color: #595959 !important; /* Pastel dark gray */
   color: #ffffff; /* Tonalidad más clara */
 }
 
@@ -313,8 +313,8 @@ a {
 }
 
 .progress-title {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: bold;
   color: #333;
   margin: 0 0 20px
 }
@@ -332,5 +332,4 @@ a {
   position: relative;
   -webkit-animation: animate-positive 2s;
   animation: animate-positive 2s;
-  background: #7b6aa0 !important
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Loading } from "../../UI";
-import { getPokemonById, getTypeBackground } from "../../helpers/getInfoPokemon";
+import { getClassNameByType, getPokemonById, getTypeBackground } from "../../helpers/getInfoPokemon";
 import { useNavigate } from "react-router-dom";
 import { PokemonStats } from "../PokemonStats/PokemonStats";
 
@@ -27,6 +27,8 @@ export const PokemonPage = ({ id }) => {
 
     }, []);
 
+    const colorType = getClassNameByType(pokemonData?.types[0].type.name);
+
   if ( !pokemonData ) return <Loading key={ id } /> 
   return (
     <div className="container">
@@ -45,7 +47,7 @@ export const PokemonPage = ({ id }) => {
             <img src={ `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${ id }.png` } alt={ pokemonData.name } className="img-fluid" />
         </div>
 
-        <div className="col-8">
+        <div className="col-4">
             <h5>Type:</h5>
             <p className="types-detail">
                 { pokemonData?.types.map(type => (
@@ -60,15 +62,19 @@ export const PokemonPage = ({ id }) => {
             <p className="text-detail">{`${(pokemonData.weight / 10).toFixed(1)}kg`}</p>
 
         </div>
+
+        <div className="col-4">
+          <h5>Abilites:</h5>
+              { pokemonData.abilities.map(ability => (
+                  <p className="text-detail" key={ ability.ability.name }>{ `${ ability.ability.name.charAt(0).toUpperCase() + ability.ability.name.slice(1) } ${ ability.is_hidden ? ' (hidden)' : '' }`  }</p>
+                  )) 
+              }
+        </div>
+
       </div>
       <div className="row mt-1">
-        <p className="text-detail">Base stats</p>
-        {/*
-          pokemonData.stats.map(stat => (
-            <p key={ `stat-${stat.stat.name}` }><span  className={`card ${ getTypeBackground('grass') }`}>{`${stat.stat.name} : ${stat.base_stat}`}</span></p>
-          ))
-          */}
-        <PokemonStats key = {`PokemonStat`}  stats={ pokemonData.stats } />
+        <p className="text-detail">Base stats</p> 
+        <PokemonStats key = {`PokemonStat`}  stats={ pokemonData.stats } color = { colorType }/>
       </div>
       
     </div>

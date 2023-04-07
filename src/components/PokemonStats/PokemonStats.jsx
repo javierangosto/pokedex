@@ -1,7 +1,7 @@
 import { PokemonStatElement } from "./PokemonStatElement"
 
 
-export const PokemonStats = ({ stats }) => {
+export const PokemonStats = ({ stats, color}) => {
     return (
         
         <div className="row">
@@ -9,7 +9,7 @@ export const PokemonStats = ({ stats }) => {
 
         {
           stats.map(stat => (
-            <PokemonStatElement key = {`PokemonStatElement-${stat.stat.name}`} stat = { stat } />
+            <PokemonStatElement key = {`PokemonStatElement-${stat.stat.name}`} stat = { stat } color = { color } />
           ))
         }
         
